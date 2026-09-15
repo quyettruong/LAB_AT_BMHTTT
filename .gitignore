@@ -1,0 +1,35 @@
+# Operating system files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editors / IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Build and temporary files
+bin/
+obj/
+build/
+dist/
+out/
+tmp/
+temp/
+*.log
+
+# Credentials and local configuration
+.env
+.env.*
+*.key
+*.pem
+
+# Python (if a later lab uses it)
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Node.js (if a later lab uses it)
+node_modules/
