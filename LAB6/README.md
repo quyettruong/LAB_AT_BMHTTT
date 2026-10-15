@@ -1,0 +1,9 @@
+# LAB6 — Xác thực Active Directory và Chính sách truy cập trên pfSense
+
+## Thông tin sinh viên
+
+- Họ và tên sinh viên: Trương Văn Quyết
+- Mã số sinh viên: 1150080155
+- Tên bài Lab: Xác thực Active Directory và Chính sách truy cập trên pfSense
+- Nội dung thực hiện: Xây dựng hệ thống tường lửa pfSense với 4 giao diện mạng (WAN, MGMT, LAN, DMZ); tích hợp Active Directory (DC01) vào pfSense thông qua giao thức LDAP và kiểm tra xác thực bằng Diagnostics > Authentication. Cấu hình Captive Portal trên phân vùng mạng LAN sử dụng Active Directory làm nguồn xác thực. Khởi tạo Alias cho máy trạm và các website mô phỏng (`GENERAL_SITE`, `JOB_SITE`, `SOCIAL_SITE`, `RESTRICTED_SITE`, `WEB_PORTS`) cũng như thiết lập các lịch trình thời gian (`LUNCH_WINDOW`, `WORK_HOURS`). Thực hiện xây dựng 5 kịch bản chính sách tường lửa quan trọng (chặn Job Site cho Client-A, cấm Restricted Site cho nhóm Policy Clients, giới hạn thời gian truy cập Social Site cho Client-B, giới hạn dịch vụ web trong giờ hành chính, và cô lập vùng DMZ khỏi mạng LAN). Cuối cùng, thực hiện ghi nhận nhật ký tường lửa (Firewall Log), quản lý bảng trạng thái (State Table) và xuất tệp cấu hình hệ thống (`config.xml`).
+- Kết quả thực hiện: Hoàn thành xuất sắc việc tích hợp thành công Active Directory vào pfSense qua LDAP và triển khai Captive Portal xác thực người dùng thành công. Nắm vững phương pháp thiết lập hệ thống Alias và Schedule để tối ưu hóa quy tắc tường lửa. Vận dụng chuẩn xác nguyên tắc xét duyệt tuần tự (First-Match) trên tab LAN và DMZ để thực thi thành công 5 kịch bản kiểm soát truy cập. Chứng minh được hiệu quả phòng thủ thông qua kết quả kiểm thử thực tế trên máy trạm Windows (Client-A, Client-B) và máy chủ Ubuntu (DMZ-WEB), đồng thời thu thập đầy đủ minh chứng qua Firewall Log, State Table và tệp cấu hình XML cuối cùng.
